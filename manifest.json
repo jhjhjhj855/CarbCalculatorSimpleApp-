@@ -1,0 +1,21 @@
+{
+  "name": "حاسبة الكربوهيدرات المبسطة",
+  "short_name": "كاربوهيدرات بسيطة",
+  "description": "حاسبة كربوهيدرات بسيطة لأي نوع طعام.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#e6f3ff",
+  "theme_color": "#28a745",
+  "icons": [
+    {
+      "src": "icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

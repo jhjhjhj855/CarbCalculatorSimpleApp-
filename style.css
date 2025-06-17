@@ -1,0 +1,117 @@
+/* style.css for Simple Carb Calculator */
+
+body {
+    font-family: 'Cairo', sans-serif;
+    background-color: #e6f3ff; /* لون خلفية أزرق فاتح جداً */
+    color: #34495e; /* لون نص داكن مائل للرمادي والأزرق */
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    box-sizing: border-box;
+    direction: rtl; /* من اليمين لليسار */
+    text-align: right; /* محاذاة النص لليمين */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+
+
+.container {
+    background-color: #ffffff;
+    padding: 35px; /* زيادة التباعد الداخلي */
+    border-radius: 15px; /* زيادة تقوس الزوايا */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* ظل أكبر وأكثر وضوحًا */
+    max-width: 600px; /* أصغر قليلا لهذا التطبيق */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #3498db;
+    margin: 0 0 20px 0;
+    font-size: 2.2em;
+    font-weight: 700;
+    text-align: center;
+    border-bottom: 2px solid #aec6cf;
+    padding-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #4a6c8e;
+    font-size: 1em;
+}
+
+input[type="number"],
+select {
+    width: calc(100% - 24px); /* لضمان عدم تجاوز العرض مع البادينغ */
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #aebac9;
+    border-radius: 8px;
+    font-size: 1em;
+    box-sizing: border-box;
+    direction: rtl;
+    text-align: right;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="number"][readonly] {
+    background-color: #f8f9fa;
+    cursor: default;
+}
+
+.result {
+    background-color: #d1ecf1;
+    color: #0c5460;
+    padding: 18px;
+    border-radius: 10px;
+    margin-top: 25px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: 1px solid #bee5eb;
+    text-align: center;
+}
+
+button {
+    background-color: #28a745; /* أخضر زاهي */
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #218838; /* أخضر أغمق عند التمرير */
+    transform: translateY(-2px); /* تأثير بسيط عند التمرير */
+}
+
+/* استجابة التصميم لأجهزة الشاشات الصغيرة */
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+    .container {
+        padding: 25px;
+        border-radius: 10px;
+    }
+    h1 {
+        font-size: 1.8em;
+    }
+    button {
+        padding: 12px 20px;
+        font-size: 1em;
+    }
+}
